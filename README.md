@@ -87,5 +87,3 @@ void bd_exchageClassMethod(Class aClass, SEL oldSEL, SEL newSEL)
 
 相对比较而言，我还是倾向于方法二。方法一的前提条件是`height`要适配好，不能是绝对值，否效果。当然，方法二也一样，只不过`height`若是绝对值，会出现文字显示不全的问题。
 在用法上，方法一只需调用`adjustFontSizeToFillItsContents`，而方法二需在`application:didFinishLaunchingWithOptions:`函数调用下`hook`。
-
-test
